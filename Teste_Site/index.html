@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FisioStar</title>
+    <link rel="icon" href="imagens/ícone.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">FisioStar</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Bem-vindo à FisioStar</h1>
+            <p>Cuidando do seu movimento com carinho e profissionalismo.</p>
+            <button class="btn-primary" onclick="abrirModal()">Agende sua consulta</button>
+        </div>
+        <!-- Modal -->
+        <div id="formularioModal" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal()">&times;</span>
+                <h2>Agende sua Consulta</h2>
+                <form onsumit>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensagemAgradecimento" style="display:none;">
+                    <p>Recebemos seu pedido de agendamento! Agradecemos e entraremos em contato em breve.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+            <img src="imagens/fisioterapeuta2.jpg" alt="Fisioterapeuta" class="profile-img">
+            <p>Sou uma fisioterapeuta especializada em reabilitação física e bem-estar. Ofereço tratamentos personalizados para ajudar você a recuperar sua mobilidade e qualidade de vida.</p>
+            <p>Minha abordagem é focada em proporcionar o equilíbrio físico e mental por meio de técnicas avançadas e cuidados especiais com cada paciente.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Fisioterapia Ortopédica</h3>
+                <p>Tratamento especializado para problemas musculoesqueléticos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Massoterapia</h3>
+                <p>Massagens terapêuticas para alivio do estresse e dores musculares.</p>
+            </div>
+            <div class="service-card">
+                <h3>Reabilitação Esportiva</h3>
+                <p>Recuperação e prevenção de lesões para atletas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>Depoimentos</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"O tratamento que recebi na FisioStar transformou minha vida! Em poucas semanas,recuperei minha mobilidade e voltei a praticar esportes."</p>
+                <span>- Pedro Teixeira</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"A fisioterapeuta tem um cuidado especial com seus pacientes. Muito dedicada!"</p>
+                <span>- Ana Costa</span>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Depois de uma cirurgia complicada, encontrei a ajuda que precisava. A fisioterapia personalizada me ajudou voltar à minha rotina de forma segura e eficiente."</p>
+                <span>- João Pereira</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+            <p>Agende sua consulta via telefone ou e-mail.</p>
+            <p>Telefone: (92) 99428-8831</p>
+            <p>Email: contato@fisiostar.com</p>
+            <p>
+                Siga-nos no Instagram: 
+                <a href="https://instagram.com/espaco.fisiostar/" target="_blank">@espaco.fisiostar</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FisioStar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
